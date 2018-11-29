@@ -64,6 +64,7 @@ function start() {
             function (error) {
               if (error) throw err;
               console.log("Your card will be charged. There are " + newQuantity + " remaining.");
+              console.log("Your total is: \n" + chosen.price)
           connection.end();
             }
           );
